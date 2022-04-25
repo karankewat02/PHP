@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <title>Login</title>
+</head>
+<body>
+    <div id="particles-js"></div>
+
+    
+    <div class="L-R-Container">
+        
+        <h1>Login</h1>
+        <form action="backend/validation.php" method="post">
+
+            <label for="username"><i class="fas fa-at"></i></label>
+            <input type="text" id="username" name="username" placeholder="Username" required> <br>
+
+            <label for="password"><i class="fas fa-key"></i></label>
+            <input type="password" name="password" id="password" placeholder="Password" required> <br>
+
+            <button>sign-in</button> <br>
+
+            <p>Don't have a account <a href="registration.html">sign-up</a></p>
+        </form>
+    </div>
+</body>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="script.js"></script>
+</html>

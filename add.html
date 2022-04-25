@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+    <title>Link-Box</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <div class="add-container">
+        <h2>Add New Link</h2>
+        <form action="backend/add-link.php" method="post">
+
+            <label for="title">Title</label>
+            <input type="text" placeholder="Titile" id="title" name="title"><br>
+
+            <label for="url">URL</label>
+            <input type="text" placeholder="URL" id="url" name="url" required> <br>
+
+            <h3>Category</h3>
+
+            <div class="categories">
+                <div><label for="fav">Favorite</label> <input type="radio" name="category" id="fav" value="fav"> </div>
+                <div><label for="yt">YouTube</label> <input type="radio" name="category" id="yt" value="yt"> </div>
+                <div><label for="linkedIn">LinkedIn</label> <input type="radio" name="category" id="linkedIn" value="linkedin"> </div>
+                <div><label for="insta">Instagram</label> <input type="radio" name="category" id="insta" value="insta"> </div>
+                <div><label for="misc">Miscellaneous</label> <input type="radio" name="category" id="misc" value="misc"> </div>
+            </div>
+
+            <button>Add</button>
+
+        </form>
+    </div>
+
+
+
+</body>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="script.js"></script>
+</html>

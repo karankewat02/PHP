@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="logo.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+    <title>Link-Box</title>
+</head>
+
+<body>
+    <div id="particles-js"></div>
+
+    <h2 style="color: #69ecf5; text-align: center">Use Your Saved Links</h2>
+
+    <div class="category-card-container">
+    
+        <div class="category-card">
+            <p>Favorite</p>
+            <i class="fas fa-star"></i>
+            <form action="backend/link-display.php" method="post">
+                <input type="hidden" name="category" value="fav">
+                <button></button>
+            </form>
+        </div>
+    
+        <div class="category-card">
+            <p>YouTube</p>
+            <i class="fab fa-youtube"></i>
+            <form action="backend/link-display.php" method="post">
+                <input type="hidden" name="category" value="yt">
+                <button></button>
+            </form>
+        </div>
+    
+        <div class="category-card">
+            <p>LinkedIn</p>
+            <i class="fab fa-linkedin-in"></i>
+            <form action="backend/link-display.php" method="post">
+                <input type="hidden" name="category" value="linkedin">
+                <button></button>
+            </form>
+        </div>
+    
+        <div class="category-card">
+            <p>Instagram</p>
+            <i class="fab fa-instagram"></i>
+            <form action="backend/link-display.php" method="post">
+                <input type="hidden" name="category" value="insta">
+                <button></button>
+            </form>
+        </div>
+    
+        <div class="category-card">
+            <p>Miscellaneous</p>
+            <i class="fas fa-box-open"></i>
+            <form action="backend/link-display.php" method="post">
+                <input type="hidden" name="category" value="misc">
+                <button></button>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="script.js"></script>
+</html>
