@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo-noBG.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <title>quizHub</title>
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo-noBG.png" alt="logo">
+
+
+    </nav>
+
+    <div class="quizInfo">
+
+        <div class="header">
+            <img src="img/logo-noBG.png" alt="">
+        </div>
+        <h1>Create Your Quiz</h1>
+
+        <form action="backend/createQuiz.php" method="post">
+            <label for="name">Name of the organizer  </label>
+            <input type="text" id="name" name="name_o" required> <br>
+
+            <label for="email">Enter your Email  </label>
+            <input type="email" id="email" name="email_o" required> <br>
+
+            <label for="title">Title of quiz</label>
+            <input type="text" id="title" name="title" required><br>
+
+            <label for="date">Date</label>
+            <input type="date" name="date" id="date" required><br>
+
+            <label for="duration">Duration(in minutes)</label>
+            <input type="number" name="duration" id="duration" required><br>
+
+            <label for="s_time">Starting Time</label>
+            <input type="time" name="s_time" id="s_time" required><br>
+
+            <label for="e_time">Ending Time</label>
+            <input type="time" name="e_time" id="e_time" required><br>
+
+            <input class="button" type="submit" value="Continue"><br>
+        </form>
+
+    </div>
+
+    <footer>
+        <h3>Contact Developer</h3>
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:karankewat2911@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fas fa-envelope"></i></a>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+</html>

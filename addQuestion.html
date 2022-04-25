@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="img/logo-noBG.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <title>quizHub</title>
+</head>
+
+<body>
+    <nav>
+        <img src="img/logo-noBG.png" alt="logo">
+
+        <form action="" method="post">
+            <input type="search" name="" id="" placeholder="Enter the Test Id">
+            <input class="fas" type="submit" value="&#xf002">
+        </form>
+    </nav>
+
+    <div class="addquestion">
+        <h1>Add Quesion</h1>
+
+        <form action="backend/addQuestion.php" method="post">
+
+            <textarea required name="q" id="" cols="30" rows="15" placeholder="Enter the Question here."></textarea>
+            
+            <p>Enter the options of the question also click the radio button of correct option</p>
+
+            <div class="options">
+                <label for="option1">option 1</label> <input type="radio" name="correct" required value="1" id="option1">
+                <input required type="text" name="o1"> 
+                <label for="option2">option 2</label> <input type="radio" name="correct" required value="2" id="option2">
+                <input required type="text" name="o2">  
+                <label for="option3">option 3</label> <input type="radio" name="correct" required value="3" id="option3">
+                <input required type="text" name="o3"> 
+                <label for="option4">option 4</label> <input type="radio" name="correct" required value="4" id="option4">
+                <input required type="text" name="o4"> 
+            </div>
+            
+            <input class="button" type="submit" name="submit" value="Add more">
+            <input class="button" type="submit" name="submit" value="Submit">
+        </form>
+    </div>
+
+    
+    <footer>
+        <h3>Contact Developer</h3>
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+            <a href="" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="mailto:karankewat2911@gmail.com" target="_blank" rel="noopener noreferrer"><i clas s="fas fa-envelope"></i></a>
+    </footer>
+</body>
+</html>
+<script src="script.js"></script>
