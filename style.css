@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root {
+    --accent-color: #29a9e9;
+    --body-bg-color: rgb(241, 241, 241);
+    --gradient: linear-gradient(to left, #1a9fe4, #89cff0);
+    --heading-font: 'Kanit', sans-serif;
+    --body-font: 'Poppins', sans-serif;
+    --body-font-size: .9em;
+    --heading-font-size: 3em;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--accent-color);
+}
+
+a:hover {
+    border-bottom: 2px solid var(--accent-color);
+}
+
+.centre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+button {
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    border: 3px solid var(--accent-color);
+    background-color: white;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: .9em;
+}
+
+
+/* INDEX PAGE CSS */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 1px 5px gray;
+}
+
+nav img {
+    width: 7vw;
+}
+
+nav .icon {
+    display: flex;
+    align-items: center;
+}
+
+nav button {
+    display: block;
+    margin: 2rem 0;
+    margin-right: 1rem;
+}
+
+footer {
+    text-align: center;
+    min-height: 10vh;
+}
+
+footer .social-links {
+    color: black;
+    font-size: 2rem;
+}
+
+.hero-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 3rem 1rem;
+}
+
+.hero-section h1 {
+    font-family: var(--heading-font);
+    font-size: var(--heading-font-size);
+    color: var(--accent-color);
+}
+
+.hero-section p {
+    line-height: 2;
+    margin-bottom: 2rem;
+}
+
+.hero-section-image {
+    background-image: url(img/hero-section.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.L-R-form input {
+    width: 80%;
+    padding: 7px;
+    margin-bottom: 1%;
+    border: 2px solid gray;
+    border-radius: 6px;
+    margin-top: 10%;
+    height: 10%;
+}
+
+.L-R-form {
+    width: 50%;
+    height: 140%;
+    margin-left: 20px;
+    border: 5px solid rgb(0, 47, 255);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.log-out-button input[type="submit"] {
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    border: 3px solid var(--accent-color);
+    background-color: white;
+    font-weight: 900;
+    cursor: pointer;
+    font-size: .9em;
+}
+
+.main-msg-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-msg {
+    width: 70vw;
+    border-radius: .5rem;
+    box-shadow: 1px 1px 10px grey;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+.feedback,
+.add-msg {
+    width: 4rem;
+    height: 4rem;
+    color: var(--accent-color);
+    box-shadow: 1px 1px 5px grey;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2em;
+    border-radius: 50%;
+    position: fixed;
+    cursor: pointer;
+}
+
+.feedback {
+    bottom: 2rem;
+    right: 1rem;
+}
+
+.add-msg {
+    bottom: 7rem;
+    right: 1rem;
+}
+
+.feedback-form,
+.add-msg-form {
+    width: 50vw;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    display: none;
+}
+
+.add-msg-form {
+    z-index: 4;
+}
+
+.feedback-form {
+    z-index: 5;
+    display: none;
+}
+
+.feedback-form form,
+.add-msg-form form {
+    background-color: var(--accent-color);
+    padding: 2rem;
+}
+
+.feedback-form input,
+textarea {
+    width: 30vw;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.add-msg-form input,
+textarea {
+    width: 30vw;
+    padding: 1rem;
+    border-radius: .5rem;
+    margin-bottom: 1rem;
+}
+
+.show {
+    display: block;
+}
+
+.mainContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer .usertab table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 60vw;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.mainContainer .usertab td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.mainContainer .usertab th {
+    background-color: var(--accent-color);
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
