@@ -1,0 +1,577 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+nav{
+    box-shadow: grey 2px 5px 10px;
+    background-color: rgb(255, 255, 255);
+}
+#logo{
+    margin-left:4% ;
+    width: 5%;
+    cursor: pointer;
+}
+#menu{
+    width: 3%;
+    float: right;
+    padding-right: 3%;
+    padding-top: 0.85%;
+    cursor: pointer;  
+}
+
+
+body{
+    background-color: rgb(238, 237, 237);
+}
+.homepage{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.singleuser{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);  
+}
+.homepage-content img{
+    display: none;
+}
+.homepage img{
+    margin-top: 10%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+#backcolor{
+    position: absolute;
+    height:100%;
+    width: 50%;
+    z-index: -1;
+    background-image:linear-gradient(rgb(113, 10, 209), rgb(167, 105, 224));
+}
+.transaction_history #backcolor{
+    position: absolute;
+    height:100%;
+    width: 50%;
+    z-index: -1;
+    background-image:linear-gradient(rgb(113, 10, 209), rgb(167, 105, 224)); 
+}
+.homepage-content h1{
+    font-family: sans-serif;
+    font-size: 400%;
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 50%;
+}
+
+.singleuser_content h1 {
+
+    font-family: sans-serif;
+    font-size: 400%;
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 50%;
+}
+#strip{
+    background-image: linear-gradient(to right,rgb(113, 10, 209),rgb(175, 138, 209));
+    width: 30%;
+    height: 3%;
+    margin-left: 10%;
+    border-radius: 5em; 
+    transition-delay: 200ms;
+}
+#srtip:hover{
+    width: 50%
+}
+.homepage-content p{
+    margin-left: 10%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 150%;
+    margin-top: 4%;
+}
+.singleuser_content p{
+    margin-left: 10%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 150%;
+    margin-top: 4%;
+}
+
+.homepage-content ul{
+    margin-left: 10%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 150%;
+    margin-top: 4%;
+}
+.singleuser_content ul{
+    margin-left: 10%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 150%;
+    margin-top: 4%;
+}
+.homepage-content #button{
+    width: 25%;
+    background-color: rgb(167, 105, 224);
+    color: white;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+    cursor: pointer;
+    transition-duration: 100ms;
+}
+.singleuser_content #button{
+    background-color: rgb(167, 105, 224);
+    color: white;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+    transition-duration: 100ms;
+    margin-left: 0%;
+    background-color: rgb(167 105 224);
+    color: rgb(255 255 255);
+    width: 70%;
+    margin-top: 9%;
+}
+.homepage-content #button:hover{
+    background-color: white;
+    color: rgb(167, 105, 224);
+    box-shadow: grey 2px 2px 10px;
+}
+.singleuser_content #button:hover{
+    background-color: white;
+    color: rgb(167, 105, 224);
+    box-shadow: grey 2px 2px 10px;
+}
+/* side bar */
+.sidebar{
+    height: 100%;
+    background-color: rgb(203, 161, 241);
+    width: 25%;
+    position: absolute;
+    z-index: 2;
+    box-shadow: rgb(24, 24, 24) 5px 5px 10px;
+}
+.sidebar ul li{
+    color: white;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    cursor: pointer;
+    margin-top: 20%;
+    margin-left: 2em;
+    font-size: 160%;
+}
+.sidebar ul{
+    margin-top: 10em;
+}
+
+
+.help-page h1{
+    text-align: center;
+    color: rgb(143, 24, 255);
+    font-size: 300%;
+    margin: 5% 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+/* chat-bot */
+.first-chat p{
+    text-align: center;
+    font-size: 200%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+.options{
+    text-align: center;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.options button{
+    text-align: center;
+    padding: 1% 2% 1% 2%;
+    margin: 1% 1% 1% 1%;
+    border: 0px solid black;
+    background-color: rgb(45, 195, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 3em;
+    cursor: pointer;
+    font-weight: 700;
+    box-shadow: 3px 3px 10px solid rgb(0, 174, 255);
+    transition-duration: 500ms;
+
+}
+.options button:hover{
+    color:rgb(45, 196, 255) ;
+    background-color: white;
+    box-shadow: 5px 5px 10px rgb(53, 53, 53);
+    
+}
+
+.prob{
+    width: 30%;
+    text-align: center;
+    background-color: white;
+    margin: 2% 5% 5% 63%;
+    padding: 1%;
+    font-size: 120%;
+    border-radius: 1em;
+    color: rgb(255, 102, 102);
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    box-shadow:5px 5px 15px rgb(39, 39, 39);
+}
+.sol{
+    background-color: white;
+    padding: 1%;
+    border-radius: 1em;
+    text-align: left;
+    width: 70%;
+    margin: 2% 5% 5% 5%;
+    font-size: 120%;
+    color: rgb(4, 211, 66);
+    box-shadow:5px 5px 15px rgb(39, 39, 39);
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+
+
+footer p {
+    font-size: 80%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(32, 32, 32);
+    color: rgba(182, 182, 182, 0.76);
+    padding-bottom: 2%;
+    padding-top: 2%;
+    text-align: center;
+}
+footer{
+    width: 100%;
+    margin-top: 7%;
+    background-color: rgb(32, 32, 32); 
+}
+.socialicon {
+    text-align: center;
+}
+.socialicon img{
+    cursor: pointer;
+    width: 3%;
+    margin: 1%;  
+}
+#git{
+    width: 2%;
+}
+#users_heading{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 300%;
+    color: rgb(253, 243, 231);
+    text-align: center;
+}
+
+.all_customer{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 5%;
+}
+
+.user{
+padding-top: 10%;
+padding-bottom: 10%;
+border: 3px solid rgb(182, 182, 182);
+background-color: white;
+width: 60%;
+height: 65%;
+margin-top: 5%;
+margin-bottom: 5%;
+margin-left: 20%;
+margin-bottom: 20%;
+border-radius: 2em;
+box-shadow: rgb(39, 39, 39) 15px 15px 20px;
+
+}
+
+.user img{
+    width: 75%;
+    border-radius: 50%;
+    border: 5px solid rgb(171, 81, 255);
+    margin-left: 9%;
+    margin-right: 9%;
+}
+.user h1{
+    font-family: 'Lobster', cursive;
+    color: rgb(31, 31, 31);
+    font-size: 25px;
+    text-align: center;
+}
+.user h3{
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    font-size: 90%;
+    color: rgb(31, 31, 31);
+    margin-top: 5%;
+}
+.user form input{
+    background-color: #2be779;
+    color: rgb(246, 255, 208);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 7% 4% 7% 4%;
+    margin-top: 10%;
+    border-radius: 2em;
+    text-align: center;
+    width: 80%;
+    margin-left: 8%;
+    margin-right: 8%;
+    cursor: pointer;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out ;
+}
+.user form input:hover{
+    width: 85%;
+    margin-left: 5%;
+    background-color: rgb(246, 255, 208);
+    color: rgb(43, 231, 121);
+    box-shadow: rgb(32, 32, 32) 2px 2px 10px;
+    font-size: larger;
+}
+#transactionbtn{
+    background-color: rgb(43, 231, 121);
+    color: rgb(246, 255, 208);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    padding: 2% 1% 2% 1%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border-radius: 2em;
+    text-align: center;
+    width: 40%;
+    margin-left: 8%;
+    margin-right: 8%;
+    cursor: pointer;
+    transition-duration: 100ms;
+    transition-timing-function: ease-in-out ;    
+}
+#transactionbtn:hover{
+    width: 45%;
+    margin-left: 5%;
+    background-color: rgb(246, 255, 208);
+    color: rgb(43, 231, 121);
+    box-shadow: rgb(32, 32, 32) 2px 2px 10px;
+    font-size: larger  
+}
+
+
+
+.transaction{
+    background-image: linear-gradient(rgb(113, 10, 209), rgb(167, 105, 224));
+    width: 96%;
+    margin: 2% 2%;
+
+}
+
+.transaction h1{
+    margin: 5% 5%;
+    padding-top: 5%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color: rgb(246, 255, 255);
+}
+
+.transaction form p{
+    text-align: center;
+    margin-top: 5%;
+    font-size: larger;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(221, 206, 206);
+}
+.transaction form #ammount{
+    padding: 2%;
+    width: 40%;
+    margin-left: 27.5%;
+    margin-right: 27.5%;
+    border-radius: 2em;
+    text-align: center;
+}
+.transaction form #transactionbtn{
+    margin-left: 30%;
+}
+.user_selctor{
+    width: 40%;
+    margin: 5% 27.5% 5% 27.5%;
+    padding: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    color: rgb(27, 27, 27);
+    font-size: 150%;
+    text-align: center;
+    border-radius: 2em;
+    background-color: rgb(203, 161, 241);
+}
+
+table{
+    width: 100%;
+}
+.content{
+    border-collapse: collapse;
+    min-width: 300px;
+    margin: 25PX 0px;
+    font-size: 30px;
+    border-radius: 5px 5px 0px 0px;
+    overflow: hidden;
+
+}
+
+.content th, .content th {
+padding: 12px 15px;
+width: 11%;
+}
+
+.content thead tr{
+background-color: #00a887;
+color: #FFF;
+text-align: left;
+font-weight: bold;
+overflow: scroll;
+}
+
+.content th,
+.content th{
+    text-align: center;
+    padding-top:12px;
+    padding-bottom:15px;
+}
+td {
+    text-align: center;
+    width: 92%;
+    margin: 2% 2%;
+}
+.content tbody tr{
+    border-bottom: 1px solid #dddddddd;
+    width: 100%;
+    overflow:hidden;
+    color: white;
+}
+
+.content tbody tr:nth-of-type(even){
+    background-color: #f3f3f3f3;
+    color: #009879;
+}
+
+.content tbody tr:last-of-type{
+    border-bottom: 5px solid #009879 ;
+}
+
+
+@media only screen and (max-width: 1000px) {
+
+    .homepage{
+    grid-template-columns: repeat(1, 1fr);
+
+    }
+    .all_customer{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-top: 5%;
+    }
+    .transaction_history #backcolor {
+        display: none;
+    }
+    .content{
+     font-size: 20px;
+    }
+
+    .content th, .content th {
+        padding: 18px 50px;
+    /* width: 21%; */
+    }
+    .singleuser_content #button {
+        width: 100%;
+    }
+    #transactionbtn{
+        margin-left: 30%;
+    }
+    #transactionbtn:hover{
+        margin-left: 30%;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+    .transaction_history #backcolor {
+        display: none;
+    }
+.homepage{
+    color: rgb(255, 255, 255);
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+table{
+    width: 50%;
+    font-size: 10px;
+}
+#logo {
+    margin-left: 4%;
+    width: 15%;
+    cursor: pointer;
+}
+#menu {
+    width: 8%;
+    float: right;
+    padding-right: 3%;
+    padding-top: 2.85%;
+    cursor: pointer;
+}
+body{
+    background-image:linear-gradient(rgb(113, 10, 209), rgb(167, 105, 224));
+
+}
+.help-page h1{
+    text-align: center;
+    color: rgb(249, 244, 255);
+    font-size: 300%;
+    margin: 5% 5%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.homepage-image{
+    display: none;
+}
+.homepage-content img {
+    display: block;
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 90%;
+    width: 70%;
+}
+.transaction_history{
+    display: block;
+}
+.homepage-content p {
+    margin-left: 10%;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 150%;
+    margin-top: 10%;
+}
+.homepage-content #button {
+    width: 25%;
+    background-color: rgb(108 43 169);
+    color: white;
+    padding: 2% 2% 2% 2%;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20%;
+}
+
+
+.sidebar {
+    height: 100%;
+    background-color: rgb(203, 161, 241);
+    width: 70%;
+    position: absolute;
+    z-index: 2;
+    box-shadow: rgb(24 24 24) 5px 5px 10px;
+}
+
+.all_customer{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin-top: 5%;
+} 
+.content th, .content th {
+    padding: 0px 10px;
+    /* width: 21%; */
+}
+
+}
