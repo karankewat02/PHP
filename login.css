@@ -1,0 +1,120 @@
+body{
+    padding: 0%;
+    margin: 0%;
+    
+    background-image: url(login/bg.jpg);
+}
+
+a{
+    color: white;
+    font-size: 140%;
+    word-spacing: 10px;
+    margin-top: 5%;
+    margin-left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+form{
+    margin-top: 10%;
+    border-left:4px solid #40916c ;
+    border-right:4px solid #40916c ;
+    background-color: rgba(15, 15, 15, 0.657);
+    width: 30%;
+    margin-left: 35% ;
+    margin-right: 35% ;
+    display: block;
+}
+
+form h1{
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #40916c;
+    color: white; 
+}
+h3{
+   
+    font-family: 'Righteous', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #40916c;
+    color: white;
+}
+#username,#password,#name,#email{
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background-color: rgba(7, 7, 7, 0.726);
+    text-align: center;
+    border: 2px solid #40916c;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+input#email {
+        margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+    background-color: rgba(7, 7, 7, 0.726);
+    text-align: center;
+    border: 2px solid #40916c;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+#username{  
+    margin-top: 10%;
+}
+#password{  
+    margin-top: 10%;
+    margin-bottom: 33%;
+}
+#name{
+    margin-bottom: 10%;
+}
+.switch{
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+    border: 0px ;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #52b788;
+    color: white;
+    font-weight:600;
+    font-size: 120%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+}
+#submitbtn{
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    border: 0px ;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: #52b788;
+    color: white;
+    font-weight:600;
+    font-size: 120%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+    transition-duration: 100ms;
+}
+#submitbtn:hover{
+    background-color: rgba(0, 0, 0, 0.171);
+    color: #52b788;
+    border: 3px solid #52b788;
+}
+@media only screen and (max-width: 600px) {
+
+    form{
+        width: 60%;
+        margin-left: 20% ;
+        margin-right: 20% ;
+        margin-top: 30% ;
+      
+    }
+
+    
+
+}

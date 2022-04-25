@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/Untitled_design__3_-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
+    <title>Login/Register</title>
+</head>
+<body>
+
+    <a href="index.html"> | Home</a>
+    <div>
+    <form id="loginform" method="POST" action="validation.php">
+        <input type="button" class="switch"  id="switchlogin" value="Login"><input class="switch" type="button" id="switchRegister"  value="Register">
+        <h1>Login</h1>
+  
+
+
+        <input type="text" name="username" id="username" required placeholder="Username">
+        <br>
+        <input type="password" name="password" id="password" required placeholder="Password">
+        <br>
+        <input type="submit" id="submitbtn" value="Login">
+
+
+
+    </form>
+    </div>
+    <div>
+        <form id="registerform" method="POST" action="registration.php">
+            <input type="button" class="switch"  id="switchlogin" value="Login"><input class="switch" type="button" id="switchRegister"  value="Register">
+            <h1>Register</h1>
+      
+    
+    
+            <input type="text"  id="name" name="name" required placeholder="Name">
+
+            <input type="email"  id="email" name="email" required placeholder="Email">
+
+            <input type="text"  id="username" name="username" required placeholder="Username">
+            <br>
+            <input type="password" id="password" name="password" required placeholder="Password">
+            <br>
+            <input type="submit" id="submitbtn" value="Register">
+    
+    
+    
+        </form>
+        </div>
+        <div><a href="form.html" target="_blank"><h3>Click Here If you Want to Help Someone Or your are in need</h1></a>
+            </div>
+    <script src="login/js/jquery-3.6.0.min.js" ></script>
+    <script src="login/js/myjquery.js" ></script>
+</body>
+</html>

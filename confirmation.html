@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/Untitled_design__3_-removebg-preview.png" type="image/x-icon">
+
+    <title>Confirmation</title>
+
+    <style>
+        body{
+            background-image: linear-gradient(to right,#f06b42 ,#fff, #1b5a2b);
+        }
+        a{
+            color: white;
+
+        }
+        h1{
+            color: rgb(94, 94, 94);
+            text-align: center;
+        }
+        div{
+            margin-top: 15%;
+            margin-left: 37%;
+        }
+        #username{
+            width: 40%;
+            text-align: center;
+            padding-top: 1%;
+            padding-bottom: 1%;
+            border: 3px solid rgba(66, 66, 66, 0.589);
+            border-radius: 15%;
+        }
+        #btn{
+            background-color: rgba(128, 128, 128, 0);
+            color: rgb(26, 26, 26);
+            border: 3px solid rgba(235, 148, 76, 0.712);
+            cursor: pointer;
+            margin-left: 15%;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="index.html"> | Home</a>
+
+    <h1>Great You Took a Step Towards a Better Nation !!!</h1>
+    <div>
+    
+    <form id="confirmation" action="confirmation.php" method="POST">
+        <input type="text" id="username" name="username" required placeholder="Username">
+        <br><br><br><br>
+        <input id="btn" type="submit" value="Confirm">
+    </form>
+</div>
+
+</body>
+</html>

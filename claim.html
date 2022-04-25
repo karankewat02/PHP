@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Done</title>
+
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            width: 100%;
+        }
+        img{
+            position: absolute;
+            z-index: -1;
+            margin: 0%;
+            padding: 0%;
+            width: 100%;
+            height: 100%;     
+        }
+       
+        h1{
+            color: rgb(245, 243, 243);
+            text-align: center;
+        }
+        h3{
+            color: rgb(233, 233, 233);
+            text-align: center;
+        }
+        p{
+            width: 70%;
+            margin-left: 15%;
+            text-align: center;
+            color: rgb(201, 201, 201);
+            font-size: 150%;
+
+        }
+        div{
+            width: 50%;
+            margin-top: 15%;
+            margin-left: 25%;
+        }
+        #feedback{ 
+            min-width: 40%;  
+            width:40%;
+            color: white;
+            margin-left:30% ;
+            text-align: center;
+            padding-top: 1%;
+            background-color: rgba(0, 0, 0, 0.74);
+            padding-bottom: 1%;
+            border: 3px solid rgba(123, 0, 238, 0.712);
+            border-radius: 15%;
+        }
+        #btn{
+            background-color: rgba(0, 0, 0, 0.336);
+            color: rgb(255, 255, 255);
+            border: 3px solid rgba(123, 0, 238, 0.712);
+            border-radius: 20%;
+            cursor: pointer;
+            margin-left: 47%;
+        }
+    </style>
+
+</head>
+<body>
+    <img src="img/bgimg.jpg" alt="background">
+    <h1>Enjoy Your Benifit !!!</h1>
+
+    <p>
+        The badge given will give you Benifit like less charge is public transport, free entry in public gardens and parks where others have to pay your good ded Towards nation will come back to you :)  
+    </p>
+<div>
+    <h3>Please Confirm your Username</h3>
+
+    <form action="claim.php"  method="POST">
+        <textarea name="feedback" placeholder="Enter Your Precious Opinion" id="feedback" cols="30" rows="10"></textarea><br><br><br>
+        <input id="btn" type="submit" value="Thanks">
+    </form>
+</div>
+
+</body>
+</html>
